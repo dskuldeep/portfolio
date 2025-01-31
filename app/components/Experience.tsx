@@ -18,7 +18,7 @@ const experiences = [
       "Dashboard Revamp: Spearheaded the re-engineering of a legacy monitoring and payments dashboard, reducing session failure rates by 90% on the customer portal.",
       "Video Player Rollout: Oversaw the deployment of instream video player on 300+ new sites, contributing 25% additional revenue to the ad network delivering.",
       "Report Automation: Automated 30+ reports from Google Ad Manager Big Query using advanced reporting pipelines, reducing report generation time by 90%.",
-      "Ad Performance Enhancement: Directed the implementation of backfill ads in video and banner formats, reducing null bids and increasing RPM by 5%."
+      "Ad Performance Enhancement: Directed the implementation of backfill ads in video and banner formats, reducing null bids and increasing RPM by 5%.",
       "Third-Party Demand Integration: Integrated third-party VAST demand for instream video ads, achieving a 30% increase in RPM.",
       "Companion Ads Implementation: Launched companion ads for instream and outstream video formats, leading to a 15% improvement in RPM.",
       "Statistical Revenue Optimization: Designed and implemented multi-GAM-based revenue optimization models, improving RPM by 12% using data-driven GAM selection.",
