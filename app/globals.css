@@ -3,13 +3,37 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 255, 255, 255;
-  --background-start-rgb: 17, 24, 39;
-  --background-end-rgb: 31, 41, 55;
+  --background: 222.2 84% 4.9%; /* Dark Blue */
+  --foreground: 210 40% 98%; /* White */
+  --card: 222.2 84% 4.9%; /* Dark Blue */
+  --card-foreground: 210 40% 98%; /* White */
+  --popover: 222.2 84% 4.9%; /* Dark Blue */
+  --popover-foreground: 210 40% 98%; /* White */
+  --primary: 217.2 91.2% 59.8%; /* Blue */
+  --primary-foreground: 210 40% 98%; /* White */
+  --primary-accent: 170, 75%, 45%; /* Vibrant Teal */
+  --secondary: 217.2 32.6% 17.5%; /* Darker Blue */
+  --secondary-foreground: 210 40% 98%; /* White */
+  --muted: 217.2 32.6% 17.5%; /* Darker Blue */
+  --muted-foreground: 215 20.2% 65.1%; /* Light Gray */
+  --accent: 170, 75%, 45%; /* Vibrant Teal */
+  --accent-foreground: 210 40% 98%; /* White */
+  --accent-hover: 170, 75%, 55%; /* Lighter Teal for hover */
+  --destructive: 0 62.8% 30.6%; /* Red */
+  --destructive-foreground: 210 40% 98%; /* White */
+  --border: 217.2 32.6% 17.5%; /* Darker Blue */
+  --input: 217.2 32.6% 17.5%; /* Darker Blue */
+  --ring: 217.2 91.2% 59.8%; /* Blue */
+  --radius: 0.5rem;
+
+  /* Custom RGB values for existing gradient background */
+  --foreground-rgb: 255, 255, 255; /* White */
+  --background-start-rgb: 17, 24, 39; /* Dark Blue */
+  --background-end-rgb: 31, 41, 55; /* Darker Blue-Gray */
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  color: hsl(var(--foreground));
   background: linear-gradient(to bottom, rgb(var(--background-start-rgb)), rgb(var(--background-end-rgb)));
 }
 
@@ -29,11 +53,11 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #4a5568;
+  background: hsl(var(--secondary)); /* Darker Blue */
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #718096;
+  background: hsl(var(--accent)); /* Vibrant Teal */
 }
 

@@ -6,7 +6,9 @@ import Experience from "./components/Experience"
 import Skills from "./components/Skills"
 import Education from "./components/Education"
 import Achievements from "./components/Achievements"
+import Projects from "./components/Projects"
 import Footer from "./components/Footer"
+import ScrollToTopButton from "./components/ScrollToTopButton" // Import ScrollToTopButton
 
 export default function Home() {
   return (
@@ -19,8 +21,10 @@ export default function Home() {
         <Skills />
         <Education />
         <Achievements />
+        <Projects />
       </main>
       <Footer />
+      <ScrollToTopButton /> {/* Add ScrollToTopButton here */}
     </div>
   )
 }

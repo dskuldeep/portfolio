@@ -19,7 +19,7 @@ const Header = () => {
                 to={item.toLowerCase()}
                 smooth={true}
                 duration={500}
-                className="text-gray-300 hover:text-white cursor-pointer"
+                className="text-lg text-gray-300 hover:text-[hsl(var(--accent))] cursor-pointer transition duration-300"
               >
                 {item}
               </Link>

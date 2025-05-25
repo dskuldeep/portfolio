@@ -26,7 +26,7 @@ const Achievements = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-3xl font-bold mb-12 text-center"
+          className="text-3xl font-bold mb-12 text-center text-[hsl(var(--primary-accent))]"
         >
           Achievements
         </motion.h2>
@@ -37,6 +37,7 @@ const Achievements = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
+              whileHover={{ scale: 1.03, boxShadow: "0px 10px 20px rgba(0,0,0,0.3)" }}
               className="bg-gray-700 rounded-lg p-4 shadow-lg"
             >
               <p className="text-gray-300">{achievement}</p>

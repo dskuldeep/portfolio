@@ -17,11 +17,11 @@ const Footer = () => {
             href="https://linkedin.com/in/kuldeep-paul"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-400 hover:text-blue-300"
+            className="text-base text-[hsl(var(--accent))] hover:text-[hsl(var(--accent-hover))] transition duration-300"
           >
             LinkedIn
           </a>
-          <a href="mailto:kuldeep.paul08@gmail.com" className="text-blue-400 hover:text-blue-300">
+          <a href="mailto:kuldeep.paul08@gmail.com" className="text-base text-[hsl(var(--accent))] hover:text-[hsl(var(--accent-hover))] transition duration-300">
             Email
           </a>
         </div>

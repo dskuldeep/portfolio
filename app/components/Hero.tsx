@@ -96,12 +96,45 @@ const Hero = () => {
         transition={{ duration: 0.8 }}
         className="z-10"
       >
-        <h1 className="text-5xl font-bold mb-4">Kuldeep Paul</h1>
-        <h2 className="text-2xl text-gray-300 mb-8">Product Manager & Data Scientist</h2>
-        <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="inline-block">
+        <motion.h1
+          className="text-5xl font-bold mb-4"
+          initial="hidden"
+          animate="visible"
+          variants={{
+            hidden: { opacity: 0 },
+            visible: {
+              opacity: 1,
+              transition: {
+                staggerChildren: 0.1,
+              },
+            },
+          }}
+        >
+          {"Kuldeep Paul".split("").map((char, index) => (
+            <motion.span key={index} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}>
+              {char}
+            </motion.span>
+          ))}
+        </motion.h1>
+        <motion.h2 
+          className="text-2xl text-gray-300 mb-8"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 1.5 }} // Delay to start after name animation
+        >
+          Product Manager & Data Scientist
+        </motion.h2>
+        <motion.div 
+          whileHover={{ scale: 1.05 }} 
+          whileTap={{ scale: 0.95 }} 
+          className="inline-block"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 2 }} // Delay to start after subtitle animation
+        >
           <a
             href="mailto:kuldeep.paul08@gmail.com"
-            className="bg-blue-500 text-white px-6 py-3 rounded-full hover:bg-blue-600 transition duration-300"
+            className="bg-[hsl(var(--accent))] text-[hsl(var(--accent-foreground))] px-6 py-3 rounded-full hover:bg-[hsl(var(--accent-hover))] transition duration-300"
           >
             Get in Touch
           </a>
