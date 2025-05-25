@@ -70,7 +70,7 @@ const Experience = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-3xl font-bold mb-12 text-center"
+          className="text-3xl font-bold mb-12 text-center text-[hsl(var(--primary-accent))]"
         >
           Work Experience
         </motion.h2>
@@ -81,10 +81,11 @@ const Experience = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
+              whileHover={{ scale: 1.03, boxShadow: "0px 10px 20px rgba(0,0,0,0.3)" }}
               className="bg-gray-800 rounded-lg p-6 shadow-lg"
             >
               <h3 className="text-2xl font-semibold mb-2">{exp.company}</h3>
-              <p className="text-blue-400 mb-2">{exp.role}</p>
+              <p className="text-[hsl(var(--accent))] mb-2">{exp.role}</p>
               <p className="text-gray-400 mb-4">{exp.period}</p>
               <ul className="list-disc list-inside space-y-2">
                 {exp.achievements.map((achievement, i) => (

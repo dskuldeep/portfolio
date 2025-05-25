@@ -23,7 +23,8 @@ const config: Config = {
   			},
   			primary: {
   				DEFAULT: 'hsl(var(--primary))',
-  				foreground: 'hsl(var(--primary-foreground))'
+  				foreground: 'hsl(var(--primary-foreground))',
+          		accent: 'hsl(var(--primary-accent))' // Added new accent color
   			},
   			secondary: {
   				DEFAULT: 'hsl(var(--secondary))',
@@ -35,7 +36,8 @@ const config: Config = {
   			},
   			accent: {
   				DEFAULT: 'hsl(var(--accent))',
-  				foreground: 'hsl(var(--accent-foreground))'
+  				foreground: 'hsl(var(--accent-foreground))',
+          		hover: 'hsl(var(--accent-hover))' // Added hover state for accent
   			},
   			destructive: {
   				DEFAULT: 'hsl(var(--destructive))',
